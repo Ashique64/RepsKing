@@ -179,3 +179,21 @@
         }
     }
 }
+
+
+
+@media (max-width:992px) {
+    .about {
+        .container-fluid {
+            .about_row{
+                .item2 {
+                    .about_content {
+                        .subtitle {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
