@@ -4,6 +4,7 @@ import "./About.scss";
 const About = () => {
     return (
         <div className="about" id="about">
+            <div className="shape-1"></div>
             <div className="container-fluid">
                 <div className="row about_row">
                     <div className="item1 col-xl-6 col-lg-6 col-md-12">
