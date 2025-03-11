@@ -4,13 +4,10 @@ import "./About.scss";
 const About = () => {
     return (
         <div className="about" id="about">
-            <div className="shape-1"></div>
             <div className="container-fluid">
                 <div className="row about_row">
-                    <div className="item1 col-xl-6 col-lg-6 col-md-12">
-                        <div className="about_img">
-                            <img src="Images/about-1.jpg" alt="" />
-                        </div>
+                    <div className="item1 col-xl-6 col-lg-6 col-md-12" style={{backgroundImage: `url('/Images/about-1.jpg')`, backgroundSize: 'cover', backgroundPosition: 'right'}}>
+                        <div className="shape-1"></div>
                     </div>
                     <div className="item2 col-xl-6 col-lg-6 col-md-12">
                         <div className="about_content">
