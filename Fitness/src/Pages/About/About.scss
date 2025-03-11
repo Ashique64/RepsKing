@@ -1,0 +1,128 @@
+.about {
+    min-height: 100vh;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+    position: sticky;
+    top: 0;
+
+    .container-fluid {
+        padding: 40px;
+        margin: 0;
+
+        .about_row {
+            .item1 {
+                .about_img {
+                    width: 100%;
+                    height: 500px;
+                    overflow: hidden;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .item2 {
+                display: flex;
+                align-items: center;
+                .about_content {
+                    padding: 0px 20px;
+
+                    .subtitle {
+                        color: var(--secondary-color);
+                        text-transform: uppercase;
+                        font-family: var(--sub-title-font);
+                        font-weight: 700;
+                        font-size: 22px;
+                        letter-spacing: 3px;
+                        display: inline-block;
+
+                        &::before {
+                            content: "";
+                            height: 15px;
+                            width: 15px;
+                            background-color: var(--secondary-color);
+                            display: inline-block;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .title {
+                        margin: 10px 0px;
+                        color: var(--primary-color);
+                        font-family: var(--title-font);
+                        font-weight: 900;
+                        font-size: 44px;
+                        text-transform: uppercase;
+                        letter-spacing: 4px;
+                        margin-bottom: 30px;
+                    }
+
+                    .para {
+                        font-family: var(--para-font);
+                        font-size: 16px;
+                        color: var(--para-color);
+                        font-style: italic;
+                    }
+
+                    .about_btn {
+                        margin: 25px 0px;
+                        a {
+                            button {
+                                background-color: var(--secondary-color);
+                                border: none;
+                                outline: none;
+                                color: var(--text-color);
+                                padding: 20px 30px;
+                                height: 60px;
+                                text-align: center;
+                                font-weight: 500;
+                                font-family: var(--sub-title-font-2);
+                                letter-spacing: 3px;
+                                text-transform: uppercase;
+                                outline: 2px solid var(--secondary-color);
+                                position: relative;
+                                z-index: 1;
+                                overflow: hidden;
+                                cursor: pointer;
+                                transition: 0.4s ease-in-out;
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: -1;
+                                    opacity: 0;
+                                    overflow: hidden;
+                                    background: var(--text-color);
+                                    transform: scale(0.1, 1);
+                                    transition: 0.4s ease-in-out;
+                                }
+
+                                &:hover {
+                                    background-color: transparent;
+                                    color: var(--secondary-color);
+
+                                    &::before {
+                                        opacity: 1;
+                                        transform: scale(1, 1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

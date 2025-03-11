@@ -2,6 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -13,9 +14,13 @@
     --primary-color: #29292B;
     --secondary-color: #9D1F15;
     --text-color:#C9C7BA;
-    /* --title-font:"Monoton", sans-serif; */
     --title-font:"Big Shoulders Inline", sans-serif;
     --sub-title-font:"Big Shoulders Stencil", sans-serif;
     --sub-title-font-2:"Bebas Neue", sans-serif;
+    --para-font:"Raleway", sans-serif;
+    --para-color:rgb(107, 103, 149);
 }
-  
+
+html {
+    scroll-behavior: smooth;
+}
