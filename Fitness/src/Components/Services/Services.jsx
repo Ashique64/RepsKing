@@ -34,7 +34,7 @@ const Services = () => {
                 </div>
                 <div className="row service_row">
                     {Items.map((item, index) => (
-                        <div key={index} className="service_col col-xl-3 col-lg-3 col-md-6">
+                        <div key={index} className="service_col col-xl-3 col-lg-3 col-md-6 col-sm-6">
                             <div className="service_item">
                                 <div className="icon">
                                     <i class={item.icon}></i>
