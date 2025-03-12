@@ -1,0 +1,113 @@
+.services {
+    background-image: url(Images/service-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+
+    .container-fluid {
+        margin: 0;
+
+        .title_row {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+            .subtitle {
+                color: var(--secondary-color);
+                text-transform: uppercase;
+                font-family: var(--sub-title-font);
+                font-weight: 700;
+                font-size: 22px;
+                letter-spacing: 3px;
+                display: inline-block;
+                text-align: center;
+
+                &::before {
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    background-color: var(--secondary-color);
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+
+            .title {
+                margin: 10px 0px;
+                color: var(--text-color);
+                font-family: var(--title-font);
+                font-weight: 900;
+                font-size: 44px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+
+        .service_row {
+            margin: 40px 0px;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+
+            .service_col {
+
+                .service_item {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                        i {
+                            background-color: var(--secondary-color);
+                            padding: 30px;
+                            border-radius: 50%;
+                            color: var(--text-color);
+                            font-size: 40px;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+
+                    h3 {
+                        color: var(--text-color);
+                        text-transform: uppercase;
+                        font-family: var(--sub-title-font-2);
+                        font-weight: 700;
+                        font-size: 22px;
+                        letter-spacing: 3px;
+                        display: inline-block;
+                        text-align: center;
+                        margin: 10px 0;
+                        overflow: hidden;
+                    }
+
+                    p {
+                        font-family: var(--para-font);
+                        font-size: 16px;
+                        color: var(--para-color);
+                        font-style: italic;
+                    }
+
+                    &:hover {
+                        .icon {
+                            i {
+                                background-color: var(--text-color);
+                                color: var(--secondary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
