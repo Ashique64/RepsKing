@@ -26,19 +26,24 @@ const Footer = () => {
         {
             title: "OPEN HOUR",
             items: [
-                "Monday 11am-7pm",
-                "Tuesday-Friday 11am-8pm",
-                "Saturday 10am-6pm",
-                "Sunday 11am-6pm",
+                {name: "Monday 11am-7pm"},
+                {name: "Tuesday-Friday 11am-8pm"},
+                {name: "Saturday 10am-6pm"},
+                {name: "Sunday 11am-6pm"},
             ],
         },
         {
             title: "COMPANY",
-            items: ["Home","About", "Services", "Pricing"],
+            items: [
+                { name: "Home", id: "hero" }, 
+                { name: "About", id: "about" }, 
+                { name: "Services", id: "services" }, 
+                { name: "Pricing", id: "pricing" }
+            ],
         },
         {
             title: "Others",
-            items: ["FAQs", "Privacy Policy", "Terms & Conditions", "Feedback"],
+            items: [{name: "FAQs"}, {name: "Privacy Policy"}, {name: "Terms & Conditions"}, {name:"Feedback"}],
         },
     ];
 
@@ -80,7 +85,7 @@ const Footer = () => {
                                             <ul>
                                                 {item.items.map((listItem, index) => (
                                                     <li key={index}>
-                                                        <a href="">{listItem}</a>
+                                                        <a href={listItem.id ? `#${listItem.id}` : "#"}>{listItem.name}</a>
                                                     </li>
                                                 ))}
                                             </ul>

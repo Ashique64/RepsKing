@@ -54,7 +54,7 @@ const Pricing = () => {
 
                 <div className="row pricing_row">
                     {pricingPlans.map((item, index) => (
-                        <div className="col-xl-4 col-lg-4 col-md-12 pricing_col">
+                        <div key={index} className="col-xl-4 col-lg-4 col-md-12 pricing_col">
                             <div className="card">
                                 <h4 className="title">{item.title}</h4>
                                 <div className="pricing_items">
