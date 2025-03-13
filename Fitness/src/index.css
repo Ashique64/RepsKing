@@ -12,13 +12,14 @@
 
 :root {
     --primary-color: #29292B;
-    --secondary-color: #9D1F15;
+    /* --secondary-color: #9D1F15; */
+    --secondary-color: #fe7622;
     --text-color:#C9C7BA;
     --title-font:"Big Shoulders Inline", sans-serif;
     --sub-title-font:"Big Shoulders Stencil", sans-serif;
     --sub-title-font-2:"Bebas Neue", sans-serif;
     --para-font:"Raleway", sans-serif;
-    --para-color:rgb(146, 142, 145);
+    --para-color:rgba(107, 107, 107, 0.784);
 }
 
 html {

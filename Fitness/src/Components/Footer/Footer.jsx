@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.scss";
 
 const Footer = () => {
-
     const socialIcons = [
         {
             icon: "bx bxl-facebook",
@@ -19,35 +18,33 @@ const Footer = () => {
         {
             icon: "bx bxl-youtube",
             link: "https://www.youtube.com/",
-        }
+        },
     ];
 
     const footerItems = [
         {
             title: "OPEN HOUR",
             items: [
-                {name: "Monday 11am-7pm"},
-                {name: "Tuesday-Friday 11am-8pm"},
-                {name: "Saturday 10am-6pm"},
-                {name: "Sunday 11am-6pm"},
+                { name: "Monday 11am-7pm" },
+                { name: "Tuesday-Friday 11am-8pm" },
+                { name: "Saturday 10am-6pm" },
+                { name: "Sunday 11am-6pm" },
             ],
         },
         {
             title: "COMPANY",
             items: [
-                { name: "Home", id: "hero" }, 
-                { name: "About", id: "about" }, 
-                { name: "Services", id: "services" }, 
-                { name: "Pricing", id: "pricing" }
+                { name: "Home", id: "hero" },
+                { name: "About", id: "about" },
+                { name: "Services", id: "services" },
+                { name: "Pricing", id: "pricing" },
             ],
         },
-        {
-            title: "Others",
-            items: [{name: "FAQs"}, {name: "Privacy Policy"}, {name: "Terms & Conditions"}, {name:"Feedback"}],
-        },
+        // {
+        //     title: "Others",
+        //     items: [{name: "FAQs"}, {name: "Privacy Policy"}, {name: "Terms & Conditions"}, {name:"Feedback"}],
+        // },
     ];
-
-
 
     return (
         <>
@@ -74,24 +71,50 @@ const Footer = () => {
 
                     <div className="footer_content">
                         <div className="row footer_content_row">
-                            {footerItems.map((item, index) => (
-                                <div key={index} className="col-lg-3 col-md-4 footer_content_col">
-                                    <div className="items">
-                                        <div className="title">
-                                            <h4>{item.title}</h4>
+                            <div className="footer_col1 col-xl-6 col-lg-6 col-md-6">
+                                <div className="row col1_row">
+                                    {footerItems.map((item, index) => (
+                                        <div key={index} className="col-lg-6 col-md-4 footer_content_col">
+                                            <div className="items">
+                                                <div className="title">
+                                                    <h4>{item.title}</h4>
+                                                </div>
+                                                <div className="item_list">
+                                                    <ul>
+                                                        {item.items.map((listItem, index) => (
+                                                            <li key={index}>
+                                                                <a href={listItem.id ? `#${listItem.id}` : "#"}>
+                                                                    {listItem.name}
+                                                                </a>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="item_list">
-                                            <ul>
-                                                {item.items.map((listItem, index) => (
-                                                    <li key={index}>
-                                                        <a href={listItem.id ? `#${listItem.id}` : "#"}>{listItem.name}</a>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="footer_col2 col-xl-6 col-lg-6 col-md-6">
+                                <div className="row location_items">
+                                    <div className="item1 col-xl-6 col-lg-6 col-md-6">
+                                        <i className="bx bx-phone"></i>
+                                        <span>9061195387, 9074284959</span>
+                                    </div>
+                                    <div className="item2 col-xl-6 col-lg-6 col-md-6">
+                                    <i className="bx bx-envelope"></i>
+                                    <span>repskingfitnessstudio@gmail.com</span>
+                                    </div>
+                                    <div className="item3 col-xl-6 col-lg-6 col-md-6">
+                                    <i className="bx bx-map"></i>
+                                    <span>Velappaya, China Bazaar, <br /> Near Radio Shop</span>
+                                    </div>
+                                    <div className="item4 col-xl-6 col-lg-6 col-md-6">
+                                    <i className="bx bxl-instagram"></i>
+                                    <span>repsking_fitness_studio</span>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -70,46 +70,131 @@
             .footer_content_row {
                 margin: 0 -15px;
 
-                .footer_content_col {
-                    padding: 0 15px;
+                .footer_col1 {
+                    .col1_row {
+                        .footer_content_col {
+                            padding: 0 15px;
 
-                    .items {
-                        margin-bottom: 30px;
-                        .title {
-                            h4 {
-                                font-weight: 700;
-                                font-size: 17px;
-                                font-family: var(--sub-title-font-2);
-                                letter-spacing: 2px;
-                                line-height: 18px;
-                                text-transform: uppercase;
-                                color: var(--text-color);
-                                padding-bottom: 20px;
-                                text-transform: uppercase;
-                            }
-                        }
+                            .items {
+                                margin-bottom: 30px;
+                                .title {
+                                    h4 {
+                                        font-weight: 700;
+                                        font-size: 17px;
+                                        font-family: var(--sub-title-font-2);
+                                        letter-spacing: 2px;
+                                        line-height: 18px;
+                                        text-transform: uppercase;
+                                        color: var(--primary-color);
+                                        padding-bottom: 20px;
+                                        text-transform: uppercase;
+                                    }
+                                }
 
-                        .item_list {
-                            ul {
-                                margin: 0;
-                                padding: 0;
+                                .item_list {
+                                    ul {
+                                        margin: 0;
+                                        padding: 0;
 
-                                li {
-                                    list-style: none;
-                                    a {
-                                        color: var(--para-color);
-                                        font-weight: 500;
-                                        font-size: 15px;
-                                        font-family: var(--para-font);
-                                        line-height: 32px;
-                                        text-decoration: none;
-                                        transition: 0.3s;
+                                        li {
+                                            list-style: none;
+                                            a {
+                                                color: var(--para-color);
+                                                font-weight: 500;
+                                                font-size: 15px;
+                                                font-family: var(--para-font);
+                                                line-height: 32px;
+                                                text-decoration: none;
+                                                transition: 0.3s;
 
-                                        &:hover {
-                                            padding-left: 8px;
+                                                &:hover {
+                                                    padding-left: 8px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+
+                .footer_col2 {
+                    .location_items {
+                        .item1 {
+                            margin: 10px 0px;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                color: var(--primary-color);
+                                font-size: 20px;
+                                margin-right: 5px;
+                            }
+
+                            span {
+                                font-family: var(--sub-title-font-2);
+                                letter-spacing: 2px;
+                                color: var(--primary-color);
+                                font-size: 16px;
+                            }
+                        }
+
+                        .item2 {
+                            margin: 10px 0px;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                color: var(--primary-color);
+                                font-size: 20px;
+                                margin-right: 5px;
+                            }
+
+                            span {
+                                font-family: var(--sub-title-font-2);
+                                letter-spacing: 2px;
+                                color: var(--primary-color);
+                                font-size: 16px;
+                                
+                            }
+                        }
+
+                        .item3 {
+                            margin: 10px 0px;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                color: var(--primary-color);
+                                font-size: 20px;
+                                margin-right: 5px;
+                            }
+
+                            span {
+                                font-family: var(--sub-title-font-2);
+                                letter-spacing: 2px;
+                                color: var(--primary-color);
+                                font-size: 16px;
+                            }
+                        }
+
+                        .item4 {
+                            margin: 10px 0px;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                color: var(--primary-color);
+                                font-size: 20px;
+                                margin-right: 5px;
+                            }
+
+                            span {
+                                font-family: var(--sub-title-font-2);
+                                letter-spacing: 2px;
+                                color: var(--primary-color);
+                                font-size: 16px;
                             }
                         }
                     }
@@ -137,7 +222,7 @@
                             font-size: 15px;
                             font-family: var(--para-font);
                             line-height: 35px;
-                            color: var(--text-color);
+                            color: var(--primary-color);
                         }
                     }
                 }
