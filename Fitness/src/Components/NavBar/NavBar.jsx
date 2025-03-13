@@ -31,8 +31,7 @@ const NavBar = () => {
                     <div className="col-xl-3 col-lg-2 col-6 nav_col1">
                         <div className="logo">
                             <a href="">
-                                LOGO
-                                <img src="" alt="" />
+                                <img src="/Images/Reps-Logo-2.PNG" alt="" />
                             </a>
                         </div>
                     </div>

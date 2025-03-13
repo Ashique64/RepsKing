@@ -6,27 +6,55 @@ const Services = () => {
         {
             icon: "bx bx-dumbbell",
             title: "Modern Equipment",
-            description: "Train with top-tier fitness equipment designed to maximize performance and results.",
+            description:
+                "Train with state-of-the-art fitness machines and free weights designed for optimal results and safety.",
         },
         {
-            icon: "bx bx-bowl-hot",
-            title: "Healthy Nutrition Plan",
-            description: "A well-balanced diet plan tailored to fuel your workouts and boost recovery.",
+            icon: "bx bx-user-voice",
+            title: "Personal Training",
+            description:
+                "One-on-one coaching with certified trainers who will guide and motivate you through personalized workouts.",
         },
         {
-            icon: "bx bx-run",
-            title: "Training Plan",
-            description: "Expert-designed workouts to help you achieve your fitness goals efficiently.",
+            icon: "bx bx-calendar-check",
+            title: "Fitness Program",
+            description:
+                "Structured workout plans tailored to improve overall strength, endurance, and flexibility for everyday health.",
         },
         {
-            icon: "bx bx-customize",
-            title: "Unique to Your Needs",
-            description: "Personalized fitness programs that cater to your specific body type and goals.",
+            icon: "bx bx-line-chart-down",
+            title: "Weight Loss Program",
+            description:
+                "Comprehensive approach combining cardio, strength training, and nutrition guidance to help you shed unwanted pounds.",
+        },
+        {
+            icon: "bx bx-body",
+            title: "Body Building Training",
+            description:
+                "Specialized hypertrophy-focused routines designed to increase muscle mass and sculpt your physique.",
+        },
+        {
+            icon: "bx bx-heart-circle",
+            title: "Cardio",
+            description:
+                "Heart-pumping workouts that improve cardiovascular health, burn calories, and boost your endurance.",
+        },
+        {
+            icon: "bx bx-trending-up",
+            title: "Weight Gaining Program",
+            description:
+                "Strategic training and nutrition plans for hardgainers looking to increase muscle mass and healthy weight.",
+        },
+        {
+            icon: "bx bx-time-five",
+            title: "Special Timing for Ladies",
+            description:
+                "Dedicated women-only hours providing a comfortable and supportive environment for female members.",
         },
     ];
 
     return (
-        <div className="services" id="services" style={{backgroundImage:`url(Images/service-3.jpg)`}}>
+        <div className="services" id="services" style={{ backgroundImage: `url(Images/service-3.jpg)` }}>
             <div className="container-fluid">
                 <div className="row title_row">
                     <h3 className="subtitle">Why choose us</h3>

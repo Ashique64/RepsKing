@@ -58,8 +58,7 @@ const Footer = () => {
                             <div className="logo_items">
                                 <div className="logo">
                                     <a href="">
-                                        Logo
-                                        <img src="" alt="" />
+                                        <img src="/Images/Reps-Logo-2.PNG" alt="" />
                                     </a>
                                 </div>
                                 <div className="social">

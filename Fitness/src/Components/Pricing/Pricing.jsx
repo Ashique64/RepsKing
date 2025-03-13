@@ -4,42 +4,55 @@ import "./Pricing.scss";
 const Pricing = () => {
     const pricingPlans = [
         {
-            title: "Class Drop In",
-            price: "$ 39",
-            type: "Single Class",
+            title: "Couple Package",
+            price: "$ 149",
+            type: "Couple Membership",
             features: [
-                "Access to one class",
-                "No membership required",
-                "Flexible timing",
-                "Professional trainers",
-                "Great for beginners",
-                "Pay per session",
+                "Gym access for two",
+                "Personal trainer for both",
+                "Access to all classes",
+                "Customized workout plans",
+                "Free nutrition consultation",
+                "Exclusive partner discounts",
             ],
         },
         {
-            title: "12 Month Unlimited",
-            price: "$ 99",
-            type: "Unlimited Access",
+            title: "3 Months Package",
+            price: "$ 79",
+            type: "Short-Term Access",
             features: [
-                "Free riding",
-                "Unlimited equipments",
-                "Personal trainer",
-                "Weight losing classes",
-                "Month to month payment",
-                "No time restriction",
+                "Gym access for 3 months",
+                "Trainer support",
+                "Strength & cardio sessions",
+                "Group workout sessions",
+                "Flexible workout hours",
+                "Discount on 6-month renewal",
             ],
         },
         {
-            title: "6 Month Unlimited",
-            price: "$ 59",
-            type: "Limited Time Offer",
+            title: "6 Months Package",
+            price: "$ 129",
+            type: "Half-Year Access",
             features: [
                 "Gym access for 6 months",
-                "Trainer support",
-                "Access to all classes",
-                "Strength training",
-                "Flexible workout hours",
-                "Discount on renewals",
+                "Trainer assistance",
+                "All group classes included",
+                "Weight training sessions",
+                "Custom workout plans",
+                "Discount on 1-year renewal",
+            ],
+        },
+        {
+            title: "1 Year Package",
+            price: "$ 199",
+            type: "Full-Year Access",
+            features: [
+                "Gym access for 12 months",
+                "Unlimited personal training",
+                "All classes included",
+                "Advanced fitness tracking",
+                "Priority access to events",
+                "Exclusive gym merchandise",
             ],
         },
     ];
@@ -54,7 +67,7 @@ const Pricing = () => {
 
                 <div className="row pricing_row">
                     {pricingPlans.map((item, index) => (
-                        <div key={index} className="col-xl-4 col-lg-4 col-md-12 pricing_col">
+                        <div key={index} className="col-xl-3 col-lg-3 col-md-12 pricing_col">
                             <div className="card">
                                 <h4 className="title">{item.title}</h4>
                                 <div className="pricing_items">
