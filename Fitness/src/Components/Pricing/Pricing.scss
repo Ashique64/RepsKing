@@ -63,6 +63,7 @@
                     flex-direction: column;
                     align-items: center;
                     padding: 70px 15px;
+                    margin: 10px 0px;
                     background: transparent;
                     border: 1px solid rgb(70, 70, 70);
                     overflow: hidden;
@@ -78,6 +79,7 @@
                         font-weight: 700;
                         letter-spacing: 1.5px;
                         text-align: center;
+                        text-transform: uppercase;
                     }
 
                     .pricing_items {
@@ -125,6 +127,125 @@
                         .pricing_items {
                             h1 {
                                 color: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pricing {
+        min-height: 75vh;
+        padding: 50px 15px;
+
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+
+            .title_row {
+                margin: 30px 0;
+
+                .subtitle {
+                    font-size: 18px;
+                }
+
+                .title {
+                    font-size: 32px;
+                }
+            }
+
+            .pricing_row {
+                margin: 20px 0;
+
+                .pricing_col {
+                    margin: 10px 0;
+
+                    .card {
+
+                        .title {
+                            font-size: 22px;
+                        }
+
+                        .pricing_items {
+                            margin: 10px 0;
+
+                            h1 {
+                                font-size: 48px;
+                            }
+
+                            h5 {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .features {
+                            ul {
+                                li {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .pricing {
+        min-height: 75vh;
+        padding: 50px 15px;
+
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+
+            .title_row {
+
+                .subtitle {
+                    font-size: 20px;
+                }
+
+                .title {
+                    font-size: 40px;
+                }
+            }
+
+            .pricing_row {
+                margin: 30px 0;
+
+                .pricing_col {
+                    margin: 10px 0;
+
+                    .card {
+
+                        .title {
+                            font-size: 32px;
+                        }
+
+                        .pricing_items {
+                            margin: 10px 0;
+
+                            h1 {
+                                font-size: 66px;
+                            }
+
+                            h5 {
+                                font-size: 28px;
+                            }
+                        }
+
+                        .features {
+                            ul {
+                                li {
+                                    font-size: 22px;
+                                }
                             }
                         }
                     }
