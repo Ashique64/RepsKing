@@ -1,0 +1,135 @@
+.pricing {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+
+    .container-fluid {
+        margin: 20px 0;
+
+        .title_row {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+
+            .subtitle {
+                color: var(--secondary-color);
+                text-transform: uppercase;
+                font-family: var(--sub-title-font);
+                font-weight: 700;
+                font-size: 22px;
+                letter-spacing: 3px;
+                display: inline-block;
+                text-align: center;
+
+                &::before {
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    background-color: var(--secondary-color);
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+
+            .title {
+                margin: 10px 0px;
+                color: var(--text-color);
+                font-family: var(--title-font);
+                font-weight: 900;
+                font-size: 44px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+
+        .pricing_row {
+            margin: 40px 0px;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+
+            .pricing_col {
+                .card {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 70px 15px;
+                    background: transparent;
+                    border: 1px solid rgb(70, 70, 70);
+                    overflow: hidden;
+                    transform: skewY(-5deg);
+                    border-radius: 0;
+                    transition: 0.3s ease-in-out;
+
+                    .title {
+                        color: var(--text-color);
+                        transform: skewY(5deg);
+                        font-family: var(--sub-title-font);
+                        font-size: 28px;
+                        font-weight: 700;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                    }
+
+                    .pricing_items {
+                        margin: 15px 0px;
+                        transform: skewY(5deg);
+
+                        h1 {
+                            font-family: var(--sub-title-font-2);
+                            color: var(--secondary-color);
+                            font-size: 62px;
+                            margin: 0;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+
+                        h5 {
+                            color: var(--text-color);
+                            font-family: var(--sub-title-font-2);
+                            font-size: 24px;
+                            font-weight: 500;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                    }
+
+                    .features {
+                        transform: skewY(5deg);
+                        text-align: center;
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            // margin-bottom: 20px;
+                            li {
+                                list-style: none;
+                                color: var(--para-color);
+                                margin: 5px 0px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: var(--secondary-color);
+
+                        .pricing_items {
+                            h1 {
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

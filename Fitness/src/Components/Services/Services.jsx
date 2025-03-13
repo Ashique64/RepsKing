@@ -26,7 +26,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="services" id="services">
+        <div className="services" id="services" style={{backgroundImage:`url(Images/service-3.jpg)`}}>
             <div className="container-fluid">
                 <div className="row title_row">
                     <h3 className="subtitle">Why choose us</h3>
@@ -37,7 +37,7 @@ const Services = () => {
                         <div key={index} className="service_col col-xl-3 col-lg-3 col-md-6 col-sm-6">
                             <div className="service_item">
                                 <div className="icon">
-                                    <i class={item.icon}></i>
+                                    <i className={item.icon}></i>
                                 </div>
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>

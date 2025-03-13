@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.scss";
 
 const Hero = () => {
+
     return (
-        <div id="hero" className="hero">
+        <div id="hero" className="hero" style={{backgroundImage:`url(Images/hero-3.png)`}}>
             <div className="content">
                 <h5> Trainer name</h5>
                 <h1 className="title">Shape your body shape your future</h1>
