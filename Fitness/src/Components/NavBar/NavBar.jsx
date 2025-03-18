@@ -9,6 +9,10 @@ const NavBar = () => {
         setMenuicon(!menuIcon);
     };
 
+    const handleNavItemClick = () => {
+        setMenuicon(false);
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 100) {
@@ -39,16 +43,19 @@ const NavBar = () => {
                         <div id="mobile_menu">
                             <ul className={menuIcon ? "show" : ""}>
                                 <li>
-                                    <a href="#hero">Home</a>
+                                    <a href="#hero" onClick={handleNavItemClick}>Home</a>
                                 </li>
                                 <li>
-                                    <a href="#about">About us</a>
+                                    <a href="#about" onClick={handleNavItemClick}>About us</a>
                                 </li>
                                 <li>
-                                    <a href="#services">Service</a>
+                                    <a href="#services" onClick={handleNavItemClick}>Service</a>
                                 </li>
                                 <li>
-                                    <a href="#pricing">Pricing</a>
+                                    <a href="#bmi" onClick={handleNavItemClick}>calculate bmi</a>
+                                </li>
+                                <li>
+                                    <a href="#pricing" onClick={handleNavItemClick}>Pricing</a>
                                 </li>
                                 <i className={menuIcon ? "bx bx-x" : ""} onClick={handleMenuIcon}></i>
                             </ul>
