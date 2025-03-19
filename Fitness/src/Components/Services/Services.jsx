@@ -54,7 +54,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="services" id="services" style={{ backgroundImage: `url(Images/service-3.jpg)` }}>
+        <div className="services" id="services" style={{ backgroundImage: `url(Images/service-7.jpg)` }}>
             <div className="container-fluid">
                 <div className="row title_row">
                     <h3 className="subtitle">Why choose us</h3>
