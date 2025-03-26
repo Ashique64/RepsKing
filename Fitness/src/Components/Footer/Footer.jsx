@@ -102,16 +102,20 @@ const Footer = () => {
                                         <span>9061195387, 9074284959</span>
                                     </div>
                                     <div className="item2 col-xl-6 col-lg-6 col-md-6">
-                                    <i className="bx bx-envelope"></i>
-                                    <span>repskingfitnessstudio@gmail.com</span>
+                                        <i className="bx bx-envelope"></i>
+                                        <span>repskingfitnessstudio@gmail.com</span>
                                     </div>
                                     <div className="item3 col-xl-6 col-lg-6 col-md-6">
-                                    <i className="bx bx-map"></i>
-                                    <span>Velappaya, China Bazaar, <br /> Near Radio Shop</span>
+                                        <i className="bx bx-map"></i>
+                                        <a style={{textDecoration: "none"}} href="https://maps.app.goo.gl/A2Gxs3btnLAwEUt19">
+                                            <span>
+                                                Velappaya, China Bazaar, <br /> Near Radio Shop, Killannur
+                                            </span>
+                                        </a>
                                     </div>
                                     <div className="item4 col-xl-6 col-lg-6 col-md-6">
-                                    <i className="bx bxl-instagram"></i>
-                                    <span>repsking_fitness_studio</span>
+                                        <i className="bx bxl-instagram"></i>
+                                        <span>repsking_fitness_studio</span>
                                     </div>
                                 </div>
                             </div>
